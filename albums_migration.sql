@@ -2,8 +2,10 @@ USE codeup_test_db;
 
 CREATE TABLE IF NOT EXISTS quotes (
                                       id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-                                      artist VARCHAR(100) NOT NULL,
-                                      name  VARCHAR(100) NOT NULL,
-                                      release_date ,
+                                      artist_name VARCHAR(50) DEFAULT 'NONE',
+                                      record_name  VARCHAR(100) NOT NULL,
+                                      release_date INT UNSIGNED,
+                                      sales_mil FLOAT,
+                                      genre TEXT NOT NULL,
                                       PRIMARY KEY (id)
 );
