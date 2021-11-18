@@ -22,17 +22,11 @@ ORDER BY first_name DESC,  last_name ASC;
 
 SELECT *
 FROM employees
-WHERE last_name LIKE '%e'
-   OR last_name LIKE 'e%';
+WHERE last_name LIKE 'e%'
+ORDER BY emp_no;
 
 
 SELECT *
 FROM employees
-WHERE last_name LIKE '%e'
-  AND last_name LIKE 'e%';
-
-
-SELECT *
-FROM employees
-WHERE last_name LIKE '%q%'
-  AND last_name NOT LIKE '%qu%';
+WHERE last_name LIKE 'e%'
+ORDER BY emp_no DESC;
