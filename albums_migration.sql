@@ -9,5 +9,6 @@ CREATE TABLE IF NOT EXISTS albums (
                                       release_date INT UNSIGNED,
                                       sales_mil FLOAT,
                                       genre TEXT NOT NULL,
-                                      PRIMARY KEY (id)
+                                      PRIMARY KEY (id),
+                                      UNIQUE (artist_name, record_name)
 );
